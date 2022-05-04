@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="姓名："/>
+
+    <EditText
+        android:id="@+id/age"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="年龄："
+        android:numeric="integer"/>
+
+    <RadioGroup
+        android:id="@+id/gender_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="性别："/>
+        <RadioButton
+            android:id="@+id/gender_male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="男"/>
+        <RadioButton
+            android:id="@+id/gender_female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="女"/>
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/num"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="编号："/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/add"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="添加"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/search"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="查询"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/del"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="删除"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/update"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="修改"
+            android:layout_weight="1"/>
+    </LinearLayout>
+    <ListView
+        android:id="@+id/stu_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </ListView>
+
+</LinearLayout>
